@@ -1,6 +1,6 @@
 export const SITE = {
-	title: 'Your Documentation Website',
-	description: 'Your website description.',
+	title: 'Accumulation-Based Motion Blur Documentation',
+	description: 'Here you can find useful info for the plugin!',
 	defaultLanguage: 'en_US',
 };
 
@@ -9,7 +9,7 @@ export const OPEN_GRAPH = {
 		src: 'https://github.com/withastro/astro/blob/main/assets/social/banner.jpg?raw=true',
 		alt: 'astro logo on a starry expanse of space,' + ' with a purple saturn-like planet floating in the right foreground',
 	},
-	twitter: 'astrodotbuild',
+	twitter: 'TheEnbyWitch',
 };
 
 export const KNOWN_LANGUAGES = {
@@ -17,7 +17,7 @@ export const KNOWN_LANGUAGES = {
 };
 
 // Uncomment this to add an "Edit this page" button to every page of documentation.
-// export const GITHUB_EDIT_URL = `https://github.com/withastro/astro/blob/main/docs/`;
+export const GITHUB_EDIT_URL = `https://github.com/LunaRyuko/AMB-Docs/blob/main/`;
 
 // Uncomment this to add an "Join our Community" button to every page of documentation.
 // export const COMMUNITY_INVITE_URL = `https://astro.build/chat`;
@@ -32,12 +32,19 @@ export const KNOWN_LANGUAGES = {
 export const SIDEBAR = {
 	en: [
 		{ text: '', header: true },
-		{ text: 'Section Header', header: true },
+		{ text: 'Overview', header: true },
 		{ text: 'Introduction', link: 'en/introduction' },
+		{ text: 'Installation', link: 'en/start/how-does-it-work' },
 		{ text: 'Page 2', link: 'en/page-2' },
 		{ text: 'Page 3', link: 'en/page-3' },
 
-		{ text: 'Another Section', header: true },
-		{ text: 'Page 4', link: 'en/page-4' },
+		{ text: 'Getting Started', header: true },
+		{ text: 'Installation', link: 'en/start/install' },
+
+		{ text: 'How to', header: true },
+		{ text: 'Use in Sequencer', link: 'en/how-to/sequencer' },
+		{ text: 'Use in C++', link: 'en/how-to/cpp' },
+		{ text: 'Use in Blueprints', link: 'en/how-to/bp' },
+		{ text: 'Use via console', link: 'en/how-to/console' },
 	],
 };
