@@ -9,10 +9,12 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "@docsearch/react": "^1.0.0-alpha.28"
+    "@docsearch/react": "^1.0.0-alpha.28",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "astro": "^0.22.9",
-    "@astrojs/renderer-preact": "^0.4.0"
+    "@astrojs/renderer-preact": "^0.4.0",
+    "astro": "^0.22.9"
   }
 }
