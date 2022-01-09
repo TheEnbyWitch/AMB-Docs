@@ -4,6 +4,8 @@ description: Docs intro
 layout: ../../layouts/MainLayout.astro
 ---
 
+Vivi here, I have no idea what to write here yet, so enjoy default astro text.
+
 **Welcome to Astro!**
 
 This is the `docs` starter template. It contains all of the features that you need to build a Markdown-powered documentation site, including:
