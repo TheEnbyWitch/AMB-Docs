@@ -91,12 +91,14 @@ const sidebarSections = SIDEBAR[langCode].reduce((col, item) => {
 	.nav-link a:hover,
 	.nav-link a:focus {
 		background-color: var(--theme-bg-hover);
+		@apply rounded;
 	}
 
 	.nav-link a[aria-current='page'] {
 		color: var(--theme-text-accent);
 		background-color: var(--theme-bg-accent);
 		font-weight: 600;
+		@apply rounded;
 	}
 
 	:global(:root.theme-dark) .nav-link a[aria-current='page'] {

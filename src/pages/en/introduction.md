@@ -4,7 +4,7 @@ description: Docs intro
 layout: ../../layouts/MainLayout.astro
 ---
 
-Vivi here, I have no idea what to write here yet, so enjoy default astro text.
+Hi there! Thank you for checking out my plugin
 
 **Welcome to Astro!**
 

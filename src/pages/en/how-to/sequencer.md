@@ -3,7 +3,7 @@ title: Use AMB in Sequencer
 layout: ../../../layouts/MainLayout.astro
 ---
 
-This is probably the easiest way to use this plugin! All you really need to do is add an `Accumulation Based Motion Blur Track`, which will contain all the necessary properties.
+This is probably the easiest way to use this plugin! All you really need to do is add an `Accumulation Based Motion Blur Track` to your sequence, which will contain all the necessary properties.
 
 ![](/sequencer/track-add.png)
 

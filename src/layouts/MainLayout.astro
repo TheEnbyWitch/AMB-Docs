@@ -48,9 +48,13 @@ const githubEditUrl = CONFIG.GITHUB_EDIT_URL && CONFIG.GITHUB_EDIT_URL + current
 			}
 			#grid-left {
 				position: fixed;
-				background-color: var(--theme-bg);
+				/*background-color: var(--theme-bg);*/
 				z-index: 10;
 				display: none;
+			}
+			#grid-left
+			{
+				@apply bg-gradient-to-b from-red-100 to-pink-300 dark:from-red-900 dark:to-pink-800; 
 			}
 			#grid-main {
 				padding: var(--doc-padding) var(--gutter);
@@ -103,7 +107,7 @@ const githubEditUrl = CONFIG.GITHUB_EDIT_URL && CONFIG.GITHUB_EDIT_URL + current
 		</style>
 	</head>
 
-	<body>
+	<body class="dark:bg-[#0c0203] bg-rose-50">
 		<Header {currentPage} />
 		<main class="layout">
 			<aside id="grid-left" class="grid-sidebar" title="Site Navigation">
