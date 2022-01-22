@@ -39,6 +39,7 @@ export const SIDEBAR = {
 
 		{ text: 'Getting Started', header: true },
 		{ text: 'Installation', link: 'en/start/install' },
+		{ text: 'Configuration', link: 'en/start/config' },
 
 		{ text: 'How to', header: true },
 		{ text: 'Use in Sequencer', link: 'en/how-to/sequencer' },
