@@ -48,5 +48,6 @@ export const SIDEBAR = {
 		{ text: 'Use via console', link: 'en/how-to/console' },
 		{ text: '', header: true },
 		{ text: 'Credits', link: 'en/credits' },
+		{ text: 'Support', link: 'en/support' },
 	],
 };

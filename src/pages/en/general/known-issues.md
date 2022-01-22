@@ -9,7 +9,7 @@ layout: ../../../layouts/MainLayout.astro
 Pass Accumulation Motion Blur has a read dependency on AMB Scene Color Copy, but it was never written to.
 ```
 
-This only happens once per-session when the engine is built in Development or Debug and the user is running the game with a debugger. I have not found this to cause any issues, but if anyone knows how I could go around fixing it, please email me @ vivi.the@enbywit.ch
+This only happens once per-session when the engine is built in Development or Debug and the user is running the game with a debugger. I have not found this to cause any issues, but if anyone knows how I could go around fixing it, please email me at support-uemarketplace@enbywit.ch
 
 There are more in UE5.0EA, but I haven't seen it causing any issues either.
 ```
