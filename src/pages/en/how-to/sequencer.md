@@ -19,8 +19,7 @@ There can only be one working track at a time.
 Decides whether the motion blur effect is active or not.
 
 ### Current Frame Weight
-Please refer to the [How does it work?](/en/general/how-does-it-work) page for a more in-depth explanation.<br>
-TL;DR: It affects how much the current frame will affect the accumulation buffer.
+This determines how much the current frame will affect the accumulation buffer.
 
 ### Zoom
 This will make the accumulation buffer appear to zoom in or out.

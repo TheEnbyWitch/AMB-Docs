@@ -11,8 +11,9 @@ If you're here this early, I'm so sorry, but I need this thing to be up and publ
 
 ## Option 2: Install from itch.io
 
-itch is good
+No compiled binaries are offered via itch.io, so your project will need to have a C++ game module (just a dummy class will do if your project is BP-only).
 
-```cpp
-const auto ILikeItch = Yes(uwu);
-```
+1) Download the Source zip
+2) Copy the AccumulationMotionBlur folder to your project's Plugins folder, like so:
+![](/install/itch_plugins.png)
+3) Compile the project and have fun!

@@ -35,6 +35,10 @@ nav ul {
 	padding: 0;
 }
 
+ol {
+	list-style: auto;
+}
+
 .content > section > * + * {
 	margin-top: 1.25rem;
 }
