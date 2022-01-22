@@ -1,6 +1,5 @@
 ---
 title: Credits
-description: 
 layout: ../../layouts/MainLayout.astro
 ---
 
