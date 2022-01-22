@@ -45,5 +45,7 @@ export const SIDEBAR = {
 		{ text: 'Use in C++', link: 'en/how-to/cpp' },
 		{ text: 'Use in Blueprints', link: 'en/how-to/bp' },
 		{ text: 'Use via console', link: 'en/how-to/console' },
+		{ text: '', header: true },
+		{ text: 'Credits', link: 'en/credits' },
 	],
 };
