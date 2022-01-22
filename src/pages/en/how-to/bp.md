@@ -29,7 +29,7 @@ Inputs:
 
 Outputs:
 * Out - Exec
-* Return Value - AMBEffect
+* Return Value - AMBEffect Stack
 
 ---
 
@@ -46,7 +46,7 @@ Target is `AMBEngine Subsystem`
 Inputs:
 * In - Exec
 * Target - AMBEngine Subsystem
-* Effect Stack - AMBEffect
+* Effect Stack - AMBEffect Stack
 
 Outputs:
 * Out - Exec
