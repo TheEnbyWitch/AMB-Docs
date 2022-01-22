@@ -10,7 +10,17 @@ Before reporting problems, please see the [Known Issues](/en/general/known-issue
 
 For support, email me at support-uemarketplace@enbywit.ch
 
+## Features
+ - Easy to use Blueprint & C++ API
+ - Sequencer support!
+ - Framerate-dependent Scaling (off by default)
+
 ## Videos
 
 - [Infiltrator Demo Example](https://www.youtube.com/watch?v=vWRDF49hjjo)
 - [Comparison](https://www.youtube.com/watch?v=1uviTtuZei8)
+
+## Links
+
+- [Unreal Marketplace]()
+- [itch.io](https://theenbywitch.itch.io/ue-accumulation-based-motion-blur)
