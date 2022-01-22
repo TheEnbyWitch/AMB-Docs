@@ -34,7 +34,8 @@ export const SIDEBAR = {
 		{ text: '', header: true },
 		{ text: 'Overview', header: true },
 		{ text: 'Introduction', link: 'en/introduction' },
-		{ text: 'How does it work?', link: 'en/how-does-it-work' },
+		{ text: 'How does it work?', link: 'en/general/how-does-it-work' },
+		{ text: 'Known Issues', link: 'en/general/known-issues' },
 
 		{ text: 'Getting Started', header: true },
 		{ text: 'Installation', link: 'en/start/install' },
