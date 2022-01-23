@@ -7,7 +7,10 @@ There are 2 ways you can go around installing this plugin, which depends on wher
 
 ## Option 1: Install from Unreal Marketplace
 
-If you're here this early, I'm so sorry, but I need this thing to be up and public first before I can actually write (and take screenshots for) how to install this way. Though you can probably figure this out on your own.
+<!--If you're here this early, I'm so sorry, but I need this thing to be up and public first before I can actually write (and take screenshots for) how to install this way. Though you can probably figure this out on your own.-->
+1) In the Epic Games Launcher, go into `Unreal Engine -> Library`
+2) In the `Vault` section, find `Accumulation-based Motion Blur`, and press `Install to Engine`
+3) After the plugin gets installed, you can open up your project, open `Plugins` and enable it there
 
 ## Option 2: Install from itch.io
 
