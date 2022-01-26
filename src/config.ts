@@ -47,6 +47,7 @@ export const SIDEBAR = {
 		{ text: 'Use in Blueprints', link: 'en/how-to/bp' },
 		{ text: 'Use via console', link: 'en/how-to/console' },
 		{ text: '', header: true },
+		{ text: 'Version History', link: 'en/version-history' },
 		{ text: 'Credits', link: 'en/credits' },
 		{ text: 'Support', link: 'en/support' },
 	],
