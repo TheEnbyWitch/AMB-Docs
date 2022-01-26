@@ -23,7 +23,7 @@ Pass Accumulation Motion Blur has a read dependency on AMB Scene Color Copy, but
 LogStats:             FDebug::EnsureFailed -  0.000 s
 ```
 
-## Engine freezes for a moment when the effect shows up
+## Engine freezes for a moment when the effect shows up for the first time in the session
 
 Same reason as above, except the user isn't running the engine with a debugger. This does not affect Shipping and Test builds of the game.
 
