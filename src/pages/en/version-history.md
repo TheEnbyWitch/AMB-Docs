@@ -1,5 +1,5 @@
 ---
-title: Credits
+title: Version History
 layout: ../../layouts/MainLayout.astro
 ---
 
