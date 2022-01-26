@@ -11,6 +11,8 @@ Pass Accumulation Motion Blur has a read dependency on AMB Scene Color Copy, but
 
 This only happens once per-session when the engine is built in Development or Debug and the user is running the game with a debugger. I have not found this to cause any issues, but if anyone knows how I could go around fixing it, please email me at support-uemarketplace@enbywit.ch
 
+This does not affect Shipping and Test builds of the game.
+
 There are more in UE5.0EA, but I haven't seen it causing any issues either.
 ```
 LogOutputDevice: Error: Ensure condition failed: (!bFailedToLoadProducedContent || bIsUntrackedRenderTarget) || (GNumExplicitGPUsForRendering > 1 && RenderTarget.GetLoadAction() == ERenderTargetLoadAction::EClear) [File:D:/build/++UE5/Sync/Engine/Source/Runtime/RenderCore/Private/RenderGraphValidation.cpp] [Line: 830] 
@@ -20,6 +22,10 @@ LogOutputDevice: Error: Ensure condition failed: Resource->bProduced || Resource
 Pass Accumulation Motion Blur has a read dependency on AMB Scene Color Copy, but it was never written to.
 LogStats:             FDebug::EnsureFailed -  0.000 s
 ```
+
+## Engine freezes for a moment when the effect shows up
+
+Same reason as above, except the user isn't running the engine with a debugger. This does not affect Shipping and Test builds of the game.
 
 ## Mobile support
 
