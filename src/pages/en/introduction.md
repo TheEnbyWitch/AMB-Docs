@@ -25,5 +25,5 @@ For support, email me at support-uemarketplace@enbywit.ch
 
 ## Links
 
-- [Unreal Marketplace]()
+- [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/accumulation-based-motion-blur)
 - [itch.io](https://theenbywitch.itch.io/ue-accumulation-based-motion-blur)
