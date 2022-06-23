@@ -11,3 +11,8 @@ Initial release
 
 - Fixed an issue where a Current Frame Weight value could be higher than 1, causing eyestrain and potential reactions from photosensitive people.
 - Added an option to revert to old behaviour if needed
+
+### 1.0.2
+
+- UE5 support. It used to work in Early Access, but the Release had broken stuff.
+- Fixed "ZoomAmmount" typos
