@@ -7,7 +7,7 @@ Hi there! Thank you for checking out my plugin!
 
 Accumulation-Based Motion Blur is a plugin that allows you to emulate in Unreal Engine the post-process Motion Blur effect common on early 2000s games, while bringing a range of options in order to allow different desired effects.
 
-Please note that the plugin only supports 4.26, 4.27 and 5.0EA.
+Please note that the plugin only supports 4.26, 4.27 and 5.0.
 
 Before reporting problems, please see the [Known Issues](/en/general/known-issues) page.
 
