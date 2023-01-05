@@ -16,3 +16,6 @@ Initial release
 
 - UE5 support. It used to work in Early Access, but the Release had broken stuff.
 - Fixed "ZoomAmmount" typos
+
+### 1.0.3
+- UE5.1 support
