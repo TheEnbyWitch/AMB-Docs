@@ -1,13 +1,16 @@
-// Full Astro Configuration API Documentation:
-// https://docs.astro.build/reference/configuration-reference
+import { defineConfig } from "astro/config";
+import preact from "@astrojs/preact";
+import react from "@astrojs/react";
+import tailwind from "@astrojs/tailwind";
 
-import preact from '@astrojs/preact';
-import react from '@astrojs/react';
-
-// @ts-check
-export default /** @type {import('astro').AstroUserConfig} */ ({
-	integrations: [
-		preact(),
-		react(),
-	  ],
+// https://astro.build/config
+export default defineConfig({
+  integrations: [
+    // Enable Preact to support Preact JSX components.
+    preact(),
+    // Enable React for the Algolia search component.
+    react(),
+    tailwind(),
+  ],
+  site: `https://docs.amb.enbywit.ch`,
 });

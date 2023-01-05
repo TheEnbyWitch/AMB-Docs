@@ -1,10 +1,13 @@
 # Astro Starter Kit: Docs Site
 
-```
-npm init astro -- --template docs
+```bash
+npm create astro@latest -- --template docs
 ```
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/docs)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/docs)
+
+![docs](https://user-images.githubusercontent.com/4677417/186189283-0831b9ab-d6b9-485d-8955-3057e532ab31.png)
 
 ## Features
 
@@ -21,35 +24,37 @@ npm init astro -- --template docs
 
 All commands are run from the root of the project, from a terminal:
 
-| Command           | Action                                       |
-|:----------------  |:-------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `npm install`          | Installs dependencies                            |
+| `npm run dev`          | Starts local dev server at `localhost:3000`      |
+| `npm run build`        | Build your production site to `./dist/`          |
+| `npm run preview`      | Preview your build locally, before deploying     |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro --help` | Get help using the Astro CLI                     |
 
 To deploy your site to production, check out our [Deploy an Astro Website](https://docs.astro.build/guides/deploy) guide.
 
 ## New to Astro?
 
-Welcome! Check out [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).
-
+Welcome! Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
 ## Customize This Theme
 
 ### Site metadata
 
 `src/config.ts` contains several data objects that describe metadata about your site like title, description, default language, and Open Graph details. You can customize these to match your project.
+
 ### CSS styling
 
-The theme's look and feel is controlled by a few key variables that you can customize yourself. You'll find them in the `public/theme.css` CSS file.
+The theme's look and feel is controlled by a few key variables that you can customize yourself. You'll find them in the `src/styles/theme.css` CSS file.
 
 If you've never worked with CSS variables before, give [MDN's guide on CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) a quick read.
 
 This theme uses a "cool blue" accent color by default. To customize this for your project, change the `--theme-accent` variable to whatever color you'd like:
 
 ```diff
-/* public/theme.css */
+/* src/styles/theme.css */
 :root {
   color-scheme: light;
 -  --theme-accent: hsla(var(--color-blue), 1);
@@ -72,7 +77,6 @@ layout: ../../layouts/MainLayout.astro
 
 For more SEO related properties, look at `src/components/HeadSEO.astro`
 
-
 ### Sidebar navigation
 
 The sidebar navigation is controlled by the `SIDEBAR` variable in your `src/config.ts` file. You can customize the sidebar by modifying this object. A default, starter navigation has already been created for you.
@@ -80,13 +84,13 @@ The sidebar navigation is controlled by the `SIDEBAR` variable in your `src/conf
 ```ts
 export const SIDEBAR = {
   en: [
-    { text: 'Section Header', header: true, },
-    { text: 'Introduction', link: 'en/introduction' },
-    { text: 'Page 2', link: 'en/page-2' },
-    { text: 'Page 3', link: 'en/page-3' },
+    { text: "Section Header", header: true },
+    { text: "Introduction", link: "en/introduction" },
+    { text: "Page 2", link: "en/page-2" },
+    { text: "Page 3", link: "en/page-3" },
 
-    { text: 'Another Section', header: true },
-    { text: 'Page 4', link: 'en/page-4' },
+    { text: "Another Section", header: true },
+    { text: "Page 4", link: "en/page-4" },
   ],
 };
 ```
@@ -95,7 +99,7 @@ Note the top-level `en` key: This is needed for multi-language support. You can 
 
 ### Multiple Languages support
 
-The Astro docs template supports multiple langauges out of the box. The default theme only shows `en` documentation, but you can enable multi-language support features by adding a second language to your project.
+The Astro docs template supports multiple languages out of the box. The default theme only shows `en` documentation, but you can enable multi-language support features by adding a second language to your project.
 
 To add a new language to your project, you'll want to extend the current `src/pages/[lang]/...` layout:
 
@@ -143,9 +147,22 @@ export const SIDEBAR = {
 // ...
 ```
 
+If you plan to use Spanish as the default language, you just need to modify the redirect path in `src/pages/index.astro`:
+
+```diff
+<script>
+- window.location.pathname = `/en/introduction`;
++ window.location.pathname = `/es/introduction`;
+</script>
+```
+
+You can also remove the above script and write a landing page in Spanish instead.
+
 ### What if I don't plan to support multiple languages?
 
 That's totally fine! Not all projects need (or can support) multiple languages. You can continue to use this theme without ever adding a second language.
+
+If that single language is not English, you can just replace `en` in directory layouts and configurations with the preferred language.
 
 ### Search (Powered by Algolia)
 
