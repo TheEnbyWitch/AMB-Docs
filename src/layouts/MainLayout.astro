@@ -56,7 +56,7 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 
 			#grid-left {
 				position: fixed;
-				background-color: var(--theme-bg);
+				@apply bg-gradient-to-b from-red-100 to-pink-300 dark:from-red-900 dark:to-pink-800;
 				z-index: 10;
 				display: none;
 			}
@@ -71,6 +71,14 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 
 			#grid-right {
 				display: none;
+			}
+
+			:global(.mobile-sidebar-toggle) {
+				overflow: hidden;
+			}
+			:global(.mobile-sidebar-toggle) #grid-left {
+				display: block;
+				top: 2rem;
 			}
 
 			@media (min-width: 50em) {
@@ -119,7 +127,7 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 		</style>
 	</head>
 
-	<body>
+	<body class="dark:bg-[#0c0203] bg-rose-50">
 		<Header currentPage={currentPage} />
 		<main class="layout">
 			<aside id="grid-left" class="grid-sidebar" title="Site Navigation">

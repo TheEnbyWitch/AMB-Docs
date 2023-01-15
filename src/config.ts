@@ -31,18 +31,18 @@ export const KNOWN_LANGUAGES = {
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
 // Uncomment this to add an "Edit this page" button to every page of documentation.
-export const GITHUB_EDIT_URL = `https://github.com/LunaRyuko/AMB-Docs/blob/main/`;
+export const GITHUB_EDIT_URL = `https://github.com/TheEnbyWitch/AMB-Docs/blob/main/`;
 
 // Uncomment this to add an "Join our Community" button to every page of documentation.
-export const COMMUNITY_INVITE_URL = `https://github.com/LunaRyuko/AMB-Docs/blob/main/`;
+//export const COMMUNITY_INVITE_URL = `https://github.com/LunaRyuko/AMB-Docs/blob/main/`;
 
 // Uncomment this to enable site search.
 // See "Algolia" section of the README for more information.
-export const ALGOLIA = {
+/*export const ALGOLIA = {
   indexName: "XXXXXXXXXX",
   appId: "XXXXXXXXXX",
   apiKey: "XXXXXXXXXX",
-};
+};*/
 
 export type Sidebar = Record<
   typeof KNOWN_LANGUAGE_CODES[number],

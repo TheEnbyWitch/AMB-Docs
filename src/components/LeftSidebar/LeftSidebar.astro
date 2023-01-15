@@ -103,6 +103,11 @@ const sidebar = SIDEBAR[langCode];
 		color: var(--theme-text-accent);
 		background-color: var(--theme-bg-accent);
 		font-weight: 600;
+		@apply rounded;
+	}
+
+	:global(:root.theme-dark) .nav-link a[aria-current='page'] {
+		color: hsla(var(--color-base-white), 100%, 1);
 	}
 
 	@media (min-width: 50em) {

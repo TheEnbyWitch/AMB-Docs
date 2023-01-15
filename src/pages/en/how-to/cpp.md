@@ -22,6 +22,8 @@ This will create an AMB effect that will be tracked by the subsystem.
 > **Note:** 
 >
 > It is recommended this to be saved into an UPROPERTY variable or a variable in your blueprint, as the AMB system **will not** prevent this from being garbage collected!!
+>
+> This also means that if the actor the variable lives on gets destroyed, the effect will disappear on the next GC update.
 
 Outputs:
 * Return Value - UAMBEffectStack*
