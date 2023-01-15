@@ -1,17 +1,20 @@
 ---
-import AvatarList from './AvatarList.astro';
-const { path } = Astro.props;
+// import AvatarList from './AvatarList.astro';
+type Props = {
+	path: string;
+};
+// const { path } = Astro.props as Props;
 ---
 
 <footer>
-	<!--<AvatarList {path} />-->
-	&copy; 2022 <a href="https://twitter.com/TheEnbyWitch">The Enby Witch</a>
+	<!-- <AvatarList path={path} /> -->
+		&copy; 2022 <a href="https://vivi.the.enbywit.ch/">The Enby Witch</a>
 </footer>
 
 <style>
 	footer {
 		margin-top: auto;
-		padding: 2rem 0;
+		padding: 2rem;
 		/*border-top: 3px solid var(--theme-divider);*/
 	}
 </style>

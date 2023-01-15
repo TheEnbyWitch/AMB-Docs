@@ -1,14 +1,18 @@
 ---
-import { getLanguageFromURL, KNOWN_LANGUAGE_CODES } from '../../languages.ts';
-import * as CONFIG from '../../config.ts';
-import AstroLogo from './AstroLogo.astro';
+import { getLanguageFromURL, KNOWN_LANGUAGE_CODES } from '../../languages';
+// import * as CONFIG from '../../config';
+// import AstroLogo from './AstroLogo.astro';
 import SkipToContent from './SkipToContent.astro';
-import SidebarToggle from './SidebarToggle.tsx';
-import LanguageSelect from './LanguageSelect.tsx';
-import Search from './Search.tsx';
+import SidebarToggle from './SidebarToggle';
+import LanguageSelect from './LanguageSelect';
+// import Search from './Search';
 
-const { currentPage } = Astro.props;
-const lang = currentPage && getLanguageFromURL(currentPage);
+type Props = {
+	currentPage: string;
+};
+
+const { currentPage } = Astro.props as Props;
+const lang = getLanguageFromURL(currentPage);
 ---
 
 <header class="bg-rose-100 dark:bg-rose-900">
@@ -24,11 +28,9 @@ const lang = currentPage && getLanguageFromURL(currentPage);
 		</div>
 		<div style="flex-grow: 1;"></div>
 		{KNOWN_LANGUAGE_CODES.length > 1 && <LanguageSelect lang={lang} client:idle />}
-		{CONFIG.ALGOLIA && (
-			<div class="search-item">
-				<Search client:idle />
-			</div>
-		)}
+		<!-- <div class="search-item">
+			<Search client:idle />
+		</div> -->
 	</nav>
 </header>
 
@@ -37,8 +39,7 @@ const lang = currentPage && getLanguageFromURL(currentPage);
 		z-index: 11;
 		height: var(--theme-navbar-height);
 		width: 100%;
-		/*background-color: var(--theme-navbar-bg);*/
-		/*@apply dark:bg-rose-900 bg-rose-50;*/
+		/* background-color: var(--theme-navbar-bg); */
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -48,9 +49,10 @@ const lang = currentPage && getLanguageFromURL(currentPage);
 	}
 
 	.logo {
+		flex: 1;
 		display: flex;
 		overflow: hidden;
-		width: auto;
+		width: 30px;
 		font-size: 2rem;
 		flex-shrink: 0;
 		font-weight: 600;
@@ -61,6 +63,7 @@ const lang = currentPage && getLanguageFromURL(currentPage);
 	}
 
 	.logo a {
+		display: flex;
 		padding: 0.5em 0.25em;
 		margin: -0.5em -0.25em;
 		text-decoration: none;
@@ -78,6 +81,7 @@ const lang = currentPage && getLanguageFromURL(currentPage);
 	}
 
 	.logo h1 {
+		display: none;
 		font: inherit;
 		color: inherit;
 		margin: 0;
@@ -98,16 +102,19 @@ const lang = currentPage && getLanguageFromURL(currentPage);
 			position: static;
 			padding: 2rem 0rem;
 		}
+
 		.logo {
 			width: auto;
 			margin: 0;
 			z-index: 0;
 		}
+
+		.logo h1 {
+			display: initial;
+		}
+
 		.menu-toggle {
 			display: none;
-		}
-		.logo {
-			width: auto;
 		}
 	}
 
@@ -126,12 +133,16 @@ const lang = currentPage && getLanguageFromURL(currentPage);
 		display: flex;
 		max-width: 200px;
 	}
-	:global(.search-item > *) {
-		flex-grow: 1;
-	}
+
 	@media (min-width: 50em) {
 		.search-item {
 			max-width: 400px;
 		}
+	}
+</style>
+
+<style is:global>
+	.search-item > * {
+		flex-grow: 1;
 	}
 </style>
