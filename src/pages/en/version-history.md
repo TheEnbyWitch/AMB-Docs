@@ -19,3 +19,6 @@ Initial release
 
 ### 1.0.3
 - UE5.1 support
+
+### 1.0.4
+- UE5.2 support
